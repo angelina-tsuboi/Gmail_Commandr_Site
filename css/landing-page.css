@@ -23,8 +23,9 @@ header.masthead {
   background-color: #343a40;
   background: url("../img/office.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 0rem;
+  min-height: 25vh;
+  padding-bottom: 4rem;
 }
 
 header.masthead .overlay {
@@ -37,8 +38,39 @@ header.masthead .overlay {
   opacity: 0.3;
 }
 
+header.masthead .nav {
+  top: 0;
+  position: absolute;
+}
+
+header.masthead .nav .logo {
+  width: 4rem;
+  height: 3rem;
+}
+
+header.masthead .nav .title {
+  color: white;
+  font-size: 2rem;
+}
+
 header.masthead h1 {
   font-size: 2rem;
+  font-family: 'Nunito';
+}
+
+header.masthead p {
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  margin-bottom: 2rem;
+}
+
+header.masthead .btnImage {
+  width: 20rem;
+  height: 6rem;
+}
+
+header.masthead .btnImage:hover {
+  border: 2px solid gray;
 }
 
 header.masthead .btnOverlay {
@@ -47,9 +79,9 @@ header.masthead .btnOverlay {
   justify-content: center;
 }
 
-header.masthead .btnOverlay .bigBtn {
-  width: 10rem;
-  height: 4rem;
+header.masthead .btnOverlay .bigBtn:hover {
+  width: 15rem;
+  height: 6rem;
   margin-right: 20%;
 }
 
@@ -67,14 +99,24 @@ header.masthead .btnOverlay .bigBtn {
   border: 3rem solid white;
 }
 
+.showcase h2 {
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
 .showcase .showcase-text {
   padding: 3rem;
+}
+
+.showcase #show3 {
+  background-position-x: -60px;
 }
 
 .showcase .showcase-img {
   min-height: 25rem;
   background-size: cover;
   border-radius: 2rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -104,6 +146,14 @@ header.masthead .btnOverlay .bigBtn {
   font-size: 5rem;
 }
 
+h3 {
+  font-family: 'Nunito';
+}
+
+p {
+  font-family: 'Roboto';
+}
+
 .testimonials {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -121,10 +171,10 @@ header.masthead .btnOverlay .bigBtn {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/cupojoe.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .call-to-action .overlay {
@@ -137,7 +187,20 @@ header.masthead .btnOverlay .bigBtn {
   opacity: 0.3;
 }
 
+.call-to-action .mainButton {
+  width: 10rem;
+  height: 4rem;
+}
+
+.call-to-action #chromeImage:hover {
+  border: 2px solid gray;
+}
+
 footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer.footer a {
+  color: white;
 }

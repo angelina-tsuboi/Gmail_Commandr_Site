@@ -1,12 +1,22 @@
 .showcase {
   border: 3rem solid white;
+  h2{
+    font-family: 'Nunito';
+    font-weight: 600;
+  }
   .showcase-text {
     padding: 3rem;
+  }
+
+  #show3{
+    // border: 5px solid black;
+    background-position-x: -60px;
   }
   .showcase-img {
     min-height: 25rem;
     background-size: cover;
     border-radius: 2rem;
+    margin-bottom: 4rem;
   }
   @media (min-width: 768px) {
     .showcase-text {

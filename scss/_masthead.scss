@@ -3,8 +3,9 @@ header.masthead {
   background-color: $gray-800;
   background: url('../img/office.jpg') no-repeat center center;
   @include background-cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 0rem;
+  min-height: 25vh;
+  padding-bottom: 4rem;
   .overlay {
     position: absolute;
     background-color: $gray-900;
@@ -14,17 +15,57 @@ header.masthead {
     left: 0;
     opacity: 0.3;
   }
+
+  .nav{
+    top: 0;
+    position: absolute;
+
+    .logo{
+      width: 4rem;
+      height: 3rem;
+    }
+
+    .title{
+      color:white;
+      font-size: 2rem;
+    }
+  }
+
   h1 {
     font-size: 2rem;
+    font-family: 'Nunito';
+  }
+
+  p{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    margin-bottom: 2rem;
+  }
+
+  .btnImage{
+    width: 20rem;
+    height: 6rem;
+  }
+
+  .btnImage:hover{
+    border: 2px solid gray;
   }
 
   .btnOverlay{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    .bigBtn{
-      width: 10rem;
-      height: 4rem;
+    // .bigBtn{
+    //   width: 10rem;
+    //   height: 4rem;
+    //   margin-right: 20%;
+    // }
+
+    
+
+    .bigBtn:hover{
+      width: 15rem;
+      height: 6rem;
       margin-right: 20%;
     }
   }
